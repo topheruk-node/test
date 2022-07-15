@@ -1,13 +1,16 @@
 {
     "name": "@topheruk/test",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "NPM module written in TypeScript",
     "type": "module",
     "main": "dist/index.js",
     "module": "dist/index.js",
     "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
     "scripts": {
-        "prepublish": "tsc",
+        "build": "rm -rf dist/ && tsc",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
